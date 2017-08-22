@@ -1,0 +1,22 @@
+{
+  "name": "challenge7",
+  "homepage": "https://github.com/sbayart/wp_challenge7",
+  "authors": [
+    "solene <solenantoine@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/external/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boot#^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
