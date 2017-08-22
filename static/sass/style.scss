@@ -1,0 +1,330 @@
+/*
+Theme Name: Challenge 7
+Author: Solene ANTOINE
+*/
+
+@import "base";
+@import "colors";
+
+html, body, header, .conthead, .headerback {
+    height: 100%;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    header {
+        // width: 100%;
+        .conthead {
+        margin: 0;
+        padding: 0;
+        display: block;
+            .headerback {
+                background: url(static/images/intro5.jpg) no-repeat center center;
+                background-size: cover;
+                h1 {
+                    color: white;
+                    text-align: center;
+                    font-family: 'Arvo', serif;;
+                    font-size: 5em;
+                    padding-top: 15%;
+                    margin-top: 0;
+                    font-weight: lighter;
+                }
+                h2 {
+                    color: white;
+                    text-align: center;
+                    font-weight: lighter;
+                    padding-top: 3%;
+                }
+                .buttons {
+                    margin-top: 3%;
+                    padding-bottom: 10%;
+                    text-align: center;
+                    width: 100%;
+                    .twitter {
+                        padding: 1em;
+                        border-radius: 7%;
+                        background-color: #498fbd;
+                        display: inline-block;
+                        margin-right: 1em;
+                        a {
+                            margin: auto;
+                            text-align: center;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                    .download {
+                        padding: 1em;
+                        border-radius: 7%;
+                        border: 1px solid white;
+                        display: inline-block;
+                        a {
+                            margin: auto;
+                            text-align: center;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .circleheader {
+                    text-align: center;
+                    .circle {
+                        // width: 5%;
+                        margin-bottom: 2%;
+                    }
+                }
+            }
+            .navbar-header {
+                margin: auto 15%;
+                .navbar-brand {
+                    font-family: 'Arvo', serif;
+                }
+            }
+            .collapse {
+                margin: auto 15%;
+            }
+        }
+    }
+    .row {
+        margin: 5% 15%;
+        h3 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 3em;
+        }
+        .sdtitle {
+            text-align: center;
+        }
+        .firstrow, .secondrow {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            article {
+                text-align: center;
+                width: 30%;
+                margin: 2em;
+                h4 {
+                    font-weight: bold;
+                }
+                img:hover {
+                    transform: rotate(360deg);
+                }
+                img {
+                    transition-duration: 1s;
+                    transition-property: all;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    .firstaside, .thirdaside {
+        background-color: #f8f8f8;
+        padding: 5em 2em;
+
+        div {
+            display: flex;
+            margin: auto 15%;
+            section {
+                h4 {
+                    font-weight: bold;
+                }
+                .sstitre {
+                    color: #9e9e9e;
+                    font-size: 0.8em;
+                    padding-right: 1em;
+
+                }
+                .green {
+                    @include button($vert);
+                }
+                .blue {
+                    background-color: #3498db;
+                    color: white;
+                    padding: 0.6em;
+                    border-radius: 7%;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .firstaside, .secondaside {
+        img {
+            cursor: url(static/images/cross.png), auto;
+        }
+    }
+    .secondaside {
+            padding: 5em 2em;
+            #slides {
+                display:none;
+            }
+        div {
+            margin: auto 15%;
+            display: flex;
+            h4 {
+                font-weight: bold;
+            }
+            .sstitre {
+                color: #9e9e9e;
+                font-size: 0.8em;
+            }
+            .green {
+                background-color: #1abc9c;
+                color: white;
+                padding: 0.6em;
+                border-radius: 7%;
+                display: inline-block;
+            }
+            .blue {
+                background-color: #3498db;
+                color: white;
+                padding: 0.6em;
+                border-radius: 7%;
+                display: inline-block;
+            }
+        }
+    }
+    .fourthaside {
+        margin: 5% 15%;
+
+        h3 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 3em;
+        }
+        .sdtitle {
+            text-align: center;
+            margin-bottom: 5%;
+        }
+        .photos {
+            display: flex;
+            img {
+                // margin: 1em;
+            }
+        }
+    }
+    footer {
+        .greysection {
+            padding: 2em;
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            h3 {
+                font-weight: bold;
+                font-size: 3em;
+            }
+            .suscribe {
+                background-color: #1abc9c;
+                padding: 1em;
+                display: inline-block;
+            }
+        }
+        .credits {
+            margin: auto 15%;
+            text-align: center;
+            h3 {
+                font-weight: bold;
+                font-size: 3em;
+            }
+            .sscredit {
+                article {
+                    display: flex;
+                    i {
+                        color: #034b81;
+                        background-color: #f0f1ec;
+                        border-radius: 100%;
+                        padding: 0.5em;
+                        margin: 0 0.5em;
+                    }
+                    h4 {
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .lady {
+            background: url(static/images/banner-bg.jpg) no-repeat center center;
+            background-size: cover;
+            padding: 8em;
+            div {
+                padding: 2em;
+                text-align: center;
+                h3 {
+                    font-weight: bold;
+                    font-size: 3em;
+                    color: white;
+                }
+                p {
+                    color: white;
+                    background-color: #324c63;
+                    border-radius: 5%;
+                    display: inline-block;
+                    padding: 0.5em;
+                }
+            }
+        }
+        .contactus {
+            margin: auto 15% 20% 15%;
+            text-align: center;
+            h3 {
+                font-weight: bold;
+                font-size: 3em;
+            }
+            .control-label {
+                text-align: left;
+            }
+            .form {
+                text-align: left;
+                .form-control {
+                    // border-radius: 7%;
+                    // border: 1px solid #bdc3c7
+                }
+                .glyphicon {
+                    background-color: #bdc3c7;
+                    color: white;
+                }
+                .green {
+                    background-color: #1abc9c;
+                    color: white;
+                    padding: 0.6em;
+                    border-radius: 7%;
+                    display: inline-block;
+                }
+            }
+            .office {
+                padding-left: 5em;
+                text-align: left;
+                h4 {
+                    font-weight: bold;
+                }
+                .social {
+                    margin-top: 2em;
+                }
+            }
+        }
+        .final {
+            margin: 20% 15%;
+            background-color: #edeff1;
+            .col-lg-8 {
+                color: #bac1c8;
+                h4 {
+                    font-weight: bold;
+                }
+            }
+            .col-lg-4 {
+                background-color: #34495e;
+                color: white;
+                h4 {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+@media(max-width:600px) {
+
+}
