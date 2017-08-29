@@ -36,15 +36,18 @@
                         </button>
                         <a class="navbar-brand" href="#">Flatfy</a>
                     </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">What is? <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Use it</a></li>
-                            <li><a href="#">Screenshot</a></li>
-                            <li><a href="#">Credits</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
+					<?php
+                        $args = array (
+                            'container' => 'div',
+                            'container_class' => 'collapse navbar-collapse',
+                            'container_id' => 'bs-example-navbar-collapse-1',
+                            'menu_class' => 'nav navbar-nav navbar-right',
+                            'menu' => 'navbar',
+                            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                            );
+                            
+                        wp_nav_menu($args)
+					?>
                 </nav>
             </div>
         </header>
