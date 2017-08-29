@@ -6,3 +6,7 @@ function wpc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'wpc_mime_types');
+
+if ( function_exists( 'add_theme_support' ) ) {
+  add_theme_support( 'post-thumbnails' );
+}
