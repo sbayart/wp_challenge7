@@ -24,7 +24,7 @@ body {
                     text-align: center;
                     font-family: 'Arvo', serif;;
                     font-size: 5em;
-                    padding-top: 15%;
+                    padding-top: 10%;
                     margin-top: 0;
                     font-weight: lighter;
                 }
@@ -84,7 +84,7 @@ body {
         }
     }
     .row {
-        margin: 5% 15%;
+        margin: 15% 15%;
         h3 {
             text-align: center;
             font-weight: bold;
@@ -323,6 +323,10 @@ body {
         }
     }
 }
-@media(max-width:600px) {
-
+@media(min-width:600px) {
+	body {
+		.row {
+        margin: 5% 15%;
+		}
+	}
 }

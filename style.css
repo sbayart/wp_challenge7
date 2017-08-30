@@ -19,7 +19,7 @@ body {
         text-align: center;
         font-family: 'Arvo', serif;
         font-size: 5em;
-        padding-top: 15%;
+        padding-top: 10%;
         margin-top: 0;
         font-weight: lighter; }
       body header .conthead .headerback h2 {
@@ -64,7 +64,7 @@ body {
     body header .conthead .collapse {
       margin: auto 15%; }
   body .row {
-    margin: 5% 15%; }
+    margin: 15% 15%; }
     body .row h3 {
       text-align: center;
       font-weight: bold;
@@ -235,5 +235,9 @@ body {
       color: white; }
       body footer .final .col-lg-4 h4 {
         font-weight: bold; }
+
+@media (min-width: 600px) {
+  body .row {
+    margin: 5% 15%; } }
 
 /*# sourceMappingURL=style.css.map */
