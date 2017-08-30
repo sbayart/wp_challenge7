@@ -22,7 +22,7 @@
             <?php the_post_thumbnail() ?>
             <div class="">
                 <h4><?php the_title(); ?></h4>
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
             </div>
         </article>
 <?php };?>
@@ -44,7 +44,7 @@ foreach ($posts as $post) {
             <?php the_post_thumbnail() ?>
             <div class="">
                 <h4><?php the_title(); ?></h4>
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
             </div>
         </article>
 <?php };?>

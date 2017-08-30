@@ -88,67 +88,67 @@ body {
           transition-duration: 1s;
           transition-property: all;
           overflow: hidden; }
-  body .firstaside, body .thirdaside {
-    background-color: #f8f8f8;
-    padding: 5em 2em; }
-    body .firstaside div, body .thirdaside div {
-      display: flex;
-      margin: auto 15%; }
-      body .firstaside div section h4, body .thirdaside div section h4 {
-        font-weight: bold; }
-      body .firstaside div section .sstitre, body .thirdaside div section .sstitre {
-        color: #9e9e9e;
-        font-size: 0.8em;
-        padding-right: 1em; }
-      body .firstaside div section .green, body .thirdaside div section .green {
-        background-color: #1abc9c;
-        color: white;
-        padding: 0.6em;
-        border-radius: 7%;
-        display: inline-block; }
-      body .firstaside div section .blue, body .thirdaside div section .blue {
-        background-color: #3498db;
-        color: white;
-        padding: 0.6em;
-        border-radius: 7%;
-        display: inline-block; }
-  body .firstaside img, body .secondaside img {
-    cursor: url(static/images/cross.png), auto; }
-  body .secondaside {
-    padding: 5em 2em; }
-    body .secondaside #slides {
-      display: none; }
-    body .secondaside div {
-      margin: auto 15%;
-      display: flex; }
-      body .secondaside div h4 {
-        font-weight: bold; }
-      body .secondaside div .sstitre {
-        color: #9e9e9e;
-        font-size: 0.8em; }
-      body .secondaside div .green {
-        background-color: #1abc9c;
-        color: white;
-        padding: 0.6em;
-        border-radius: 7%;
-        display: inline-block; }
-      body .secondaside div .blue {
-        background-color: #3498db;
-        color: white;
-        padding: 0.6em;
-        border-radius: 7%;
-        display: inline-block; }
-  body .fourthaside {
-    margin: 5% 15%; }
-    body .fourthaside h3 {
-      text-align: center;
-      font-weight: bold;
-      font-size: 3em; }
-    body .fourthaside .sdtitle {
-      text-align: center;
-      margin-bottom: 5%; }
-    body .fourthaside .photos {
-      display: flex; }
+    body .row .firstaside, body .row .thirdaside {
+      background-color: #f8f8f8;
+      padding: 5em 2em; }
+      body .row .firstaside div, body .row .thirdaside div {
+        display: flex;
+        margin: auto 15%; }
+        body .row .firstaside div section h4, body .row .thirdaside div section h4 {
+          font-weight: bold; }
+        body .row .firstaside div section .sstitre, body .row .thirdaside div section .sstitre {
+          color: #9e9e9e;
+          font-size: 0.8em;
+          padding-right: 1em; }
+        body .row .firstaside div section .green, body .row .thirdaside div section .green {
+          background-color: #1abc9c;
+          color: white;
+          padding: 0.6em;
+          border-radius: 7%;
+          display: inline-block; }
+        body .row .firstaside div section .blue, body .row .thirdaside div section .blue {
+          background-color: #3498db;
+          color: white;
+          padding: 0.6em;
+          border-radius: 7%;
+          display: inline-block; }
+    body .row .firstaside img, body .row .secondaside img {
+      cursor: url(static/images/cross.png), auto; }
+    body .row .secondaside {
+      padding: 5em 2em; }
+      body .row .secondaside #slides {
+        display: none; }
+      body .row .secondaside div {
+        margin: auto 15%;
+        display: flex; }
+        body .row .secondaside div h4 {
+          font-weight: bold; }
+        body .row .secondaside div .sstitre {
+          color: #9e9e9e;
+          font-size: 0.8em; }
+        body .row .secondaside div .green {
+          background-color: #1abc9c;
+          color: white;
+          padding: 0.6em;
+          border-radius: 7%;
+          display: inline-block; }
+        body .row .secondaside div .blue {
+          background-color: #3498db;
+          color: white;
+          padding: 0.6em;
+          border-radius: 7%;
+          display: inline-block; }
+    body .row .fourthaside {
+      margin: 5% 15%; }
+      body .row .fourthaside h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em; }
+      body .row .fourthaside .sdtitle {
+        text-align: center;
+        margin-bottom: 5%; }
+      body .row .fourthaside .photos {
+        display: flex; }
   body footer .greysection {
     padding: 2em;
     background-color: #34495e;
