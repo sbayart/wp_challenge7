@@ -5,37 +5,50 @@
 	?></h3>
 		<p><?php echo category_description(6); ?></p>
         <div class="sscredit">
-            <div class="row">
-                <article class="col-xs-6">
-                    <i class="fa fa-desktop fa-4x "></i>
-                    <div class="">
-                        <h4>Bootstrap</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-                    </div>
-                </article>
-                <article class="col-xs-6">
-                    <i class="fa fa-picture-o fa-4x "> </i>
-                    <div class="">
-                        <h4>Owl-Carousel</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-                    </div>
-                </article>
-            </div>
-            <div class="row">
-                <article class="col-xs-6">
-                    <i class="fa fa-magic fa-4x "> </i>
-                    <div class="">
-                        <h4>Codrops</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-                    </div>
-                </article>
-                <article class="col-xs-6">
-                    <i class="fa fa-heart fa-4x "> </i>
-                    <div class="">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-                    </div>
-                </article>
-            </div><!--row -->
-        </div>
-    </section>
+			<div class="row">
+				<?php
+					$args = array(
+						'posts_per_page'   => 2,
+						'orderby'          => 'date',
+						'order'            => 'ASC',
+						'category_name'    => 'credit'
+					);
+					$posts = get_posts($args);
+					foreach ($posts as $post) {
+			setup_postdata( $post );
+			?>
+				<article class="col-xs-6">
+					<?php $meta = get_post_meta(get_the_ID(),'fa-icon', true) ?>
+					<i class="fa fa-<?php echo $meta; ?> fa-4x "></i>
+					<div class="">
+						<h4><?php the_title(); ?></h4>
+						<?php the_content(); ?>
+					</div>
+				</article>
+			<?php };?>
+			</div><!--row -->
+						<div class="row">
+				<?php
+					$args = array(
+						'posts_per_page'   => 2,
+						'offset'           => 2,
+						'orderby'          => 'date',
+						'order'            => 'ASC',
+						'category_name'    => 'credit'
+					);
+					$posts = get_posts($args);
+					foreach ($posts as $post) {
+			setup_postdata( $post );
+			?>
+				<article class="col-xs-6">
+				<?php $meta = get_post_meta(get_the_ID(),'fa-icon', true) ?>
+					<i class="fa fa-<?php echo $meta; ?> fa-4x "></i>
+					<div class="">
+						<h4><?php the_title(); ?></h4>
+						<?php the_content(); ?>
+					</div>
+				</article>
+			<?php };?>
+			</div><!--row -->
+		</div>
+	</section>

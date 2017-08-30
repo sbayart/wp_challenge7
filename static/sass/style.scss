@@ -13,9 +13,9 @@ body {
     font-family: 'Lato', sans-serif;
     header {
         .conthead {
-        margin: 0;
-        padding: 0;
-        display: block;
+		    margin: 0;
+		    padding: 0;
+		    display: block;
             .headerback {
                 background: url(static/images/intro5.jpg) no-repeat center center;
                 background-size: cover;
@@ -83,7 +83,7 @@ body {
             }
         }
     }
-    .row {
+    main {
         margin: 15% 15%;
         h3 {
             text-align: center;
@@ -115,6 +115,7 @@ body {
                 }
             }
         }
+    }
 		.firstaside, .thirdaside {
 		    background-color: #f8f8f8;
 		    padding: 5em 2em;
@@ -197,7 +198,6 @@ body {
 		        }
 		    }
 		}
-	}
     footer {
         .greysection {
             padding: 2em;

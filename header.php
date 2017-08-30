@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/static/external/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css'; ?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri()?>" >
         <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">
+        <?php wp_head() ?>
     </head>
     <body>
         <header>

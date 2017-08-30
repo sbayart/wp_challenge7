@@ -1,4 +1,4 @@
-<section class="firstaside">
+<aside class="firstaside">
 	<?php
 		$args = array(
 		            'posts_per_page'   => 1,
@@ -18,8 +18,8 @@
 		<?php the_post_thumbnail('medium') ?>
 	</div>
 	<?php };?>
-</section>
-<section class="secondaside">
+</aside>
+<aside class="secondaside">
 	<?php
 		$args = array(
 		            'posts_per_page'   => 1,
@@ -39,8 +39,8 @@
 		</section>
 	</div>
 	<?php };?>
-</section>
-<section class="thirdaside">
+</aside>
+<aside class="thirdaside">
 <?php
 		$args = array(
 		            'posts_per_page'   => 1,
@@ -59,4 +59,4 @@
 		<?php the_post_thumbnail('medium') ?>
 	</div>
 	<?php };?>
-</section>
+</aside>
